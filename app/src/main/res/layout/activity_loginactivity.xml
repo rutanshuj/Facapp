@@ -13,8 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="        Email Address     "
+        android:text="Email Address"
         android:id="@+id/textView"
+        android:gravity="center"
         android:layout_marginTop="46dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -27,7 +28,8 @@
         android:layout_below="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="45dp" />
+        android:layout_marginEnd="45dp"
+        android:gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
