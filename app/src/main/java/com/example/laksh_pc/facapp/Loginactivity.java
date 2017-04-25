@@ -31,7 +31,8 @@ public class Loginactivity extends Activity {
     public void logbtn_Click(View v) {
         final ProgressDialog progressDialog = ProgressDialog.show(Loginactivity.this, "Please Wait..", "Processing..", true);
 
-        (firebaseAuth.signInWithEmailAndPassword(txtEmailLogin.getText().toString(), txtPwd.getText().toString())).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
+        firebaseAuth.signInWithEmailAndPassword(txtEmailLogin.getText().toString(), txtPwd.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressDialog.dismiss();
@@ -39,16 +40,14 @@ public class Loginactivity extends Activity {
                 if (task.isSuccessful()) {
                     Toast.makeText(Loginactivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                     Intent i = new Intent(Loginactivity.this, NavigationActivity.class);
-                    i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
+                    //i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
                     startActivity(i);
                 }
                 else{
                     Log.e("Error", task.getException().toString());
                     Toast.makeText(Loginactivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
-
                 }
             }
         });
-
     }
 }

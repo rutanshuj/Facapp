@@ -22,7 +22,8 @@
         <activity android:name=".Profileactivity" />
         <activity android:name=".NavigationActivity" />
         <activity android:name=".homeFrag" />
-        <activity android:name=".ttFrag"></activity>
+        <activity android:name=".ttFrag" />
+        <activity android:name=".AttendanceFrag"></activity>
     </application>
 
 </manifest>

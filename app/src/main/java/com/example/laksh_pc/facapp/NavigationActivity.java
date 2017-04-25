@@ -64,6 +64,9 @@ public class NavigationActivity extends AppCompatActivity {
                     case R.id.home:
                         fragmentClass = homeFrag.class;
                         break;
+                    case R.id.tt:
+                        fragmentClass = ttFrag.class;
+                        break;
                 }
                 try {
                     fragment = (android.support.v4.app.Fragment) fragmentClass.newInstance();

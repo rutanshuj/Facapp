@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="3dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/r1"
+        android:text="Sr. No."
+        android:id="@+id/st_sr"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/r1"
+        android:text="Reg. Number"
+        android:id="@+id/st_regno"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:padding="5dp"
+        android:background="@drawable/r1"
+        android:text="Name"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:id="@+id/st_name"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/r1"
+        android:text="P/A"
+        android:layout_height="wrap_content"
+        android:id="@+id/st_ap"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>
