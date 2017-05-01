@@ -37,16 +37,16 @@ public class Loginactivity extends Activity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressDialog.dismiss();
 
-                if (task.isSuccessful()) {
+               // if (task.isSuccessful()) {
                     Toast.makeText(Loginactivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                     Intent i = new Intent(Loginactivity.this, NavigationActivity.class);
                     //i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
                     startActivity(i);
-                }
-                else{
-                    Log.e("Error", task.getException().toString());
-                    Toast.makeText(Loginactivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
-                }
+               // }
+//                else{
+//                    Log.e("Error", task.getException().toString());
+//                    Toast.makeText(Loginactivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+//                }
             }
         });
     }

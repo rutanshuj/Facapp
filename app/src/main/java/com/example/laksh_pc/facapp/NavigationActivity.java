@@ -67,6 +67,9 @@ public class NavigationActivity extends AppCompatActivity {
                     case R.id.tt:
                         fragmentClass = ttFrag.class;
                         break;
+                    case  R.id.attendance1:
+                        fragmentClass = AttendanceFrag.class;
+                        break;
                 }
                 try {
                     fragment = (android.support.v4.app.Fragment) fragmentClass.newInstance();
