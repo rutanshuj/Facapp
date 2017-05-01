@@ -21,9 +21,17 @@
         <activity android:name=".Loginactivity" />
         <activity android:name=".Profileactivity" />
         <activity android:name=".NavigationActivity" />
-        <activity android:name=".homeFrag" />
-        <activity android:name=".ttFrag" />
-        <activity android:name=".AttendanceFrag"></activity>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIdService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
